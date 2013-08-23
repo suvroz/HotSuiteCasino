@@ -23,6 +23,23 @@
 		</style>
 	</head>
 	<body onload="resizeScreen()">
-		heloooo
+		<div id="scale_container">
+			<div id="game_container"></div>
+			<div id="game_loader">
+				<div class="initloader"></div>
+			</div>
+			<div id="dark_screen"></div>
+			<div id="orientation_message">
+				<div id="orientation_message_container" class="popup">
+					<div class="msg_text">Please change device orientation to landscape!</div>
+					<div id="iphone"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var gamename	=	'bubblerush';
+			var build		=	'build1';
+			loadGame(gamename,build);
+		</script>
 	</body>
 </html>
